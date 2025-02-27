@@ -11,6 +11,8 @@ export const env = createEnv({
     NEXT_PUBLIC_BETTER_AUTH_URL: z.string(),
     // RESEND_API_KEY: z.string(),
     NEXT_PUBLIC_POSTHOG_KEY: z.string(),
+    NEXT_PUBLIC_GOOGLE_CLIENT_ID: z.string(),
+    GOOGLE_CLIENT_SECRET: z.string(),
     NEXT_PUBLIC_POSTHOG_HOST: z.string().url(),
     DATABASE_URL: z.string(),
     NODE_ENV: z
@@ -27,6 +29,7 @@ export const env = createEnv({
     NEXT_PUBLIC_POSTHOG_KEY: z.string(),
     NEXT_PUBLIC_POSTHOG_HOST: z.string().url(),
     NEXT_PUBLIC_BETTER_AUTH_URL: z.string(),
+    NEXT_PUBLIC_GOOGLE_CLIENT_ID: z.string(),
   },
 
   /**
@@ -38,6 +41,8 @@ export const env = createEnv({
     NEXT_PUBLIC_BETTER_AUTH_URL: process.env.NEXT_PUBLIC_BETTER_AUTH_URL,
     // RESEND_API_KEY: process.env.RESEND_API_KEY,
     NODE_ENV: process.env.NODE_ENV,
+    NEXT_PUBLIC_GOOGLE_CLIENT_ID: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
+    GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
     NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
     NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
     DATABASE_URL: process.env.DATABASE_URL,
